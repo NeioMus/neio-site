@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media (max-width: 37.5em) {
+
+	h1 {
+		font-size: 8vw !important;
+	}
+	.h3 {
+		font-size: 1.7rem !important;
+		font-family: 'Roboto', sans-serif;
+	}
+	.display-4 {
+	font-size: 3.5rem;
+}
+}

@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	background-color: #252617 !important;
+}
+body {
+	display: contents;
+	overflow-y: hidden;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+	transform-style: preserve-3d;
+}
+
+.container-fluid {
+	background-color: #252617 !important;
+	display: block;
+	perspective: 1px;
+	perspective-origin: center top;
+	scroll-behavior: smooth;
+		overflow-x: hidden !important;
+}
+
+h1 {
+	font-size: 2.8vw;
+	font-family: 'Roboto', sans-serif;
+	font-variant-ligatures:none;
+/*	line-height: 6vh !important;*/
+}
+h2 {
+	font-size: 2.5vw;
+	font-family: 'Roboto', sans-serif;
+	font-variant-ligatures:none;
+}
+.h3 {
+	font-size: 2.2rem !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+.cor1 {
+	color: #BABF75;
+}
+.cor2 {
+	color: #707346;
+}
+.cor3 {
+	color: #6D7324;
+}
+.cor4 {
+	color: #3D4014;
+}
+.cor5 {
+	color: #252617;
+}
+.cor6 {
+	color: #542F73;
+}
+.lead {
+	font-size: 1.7rem !important;
+	font-weight: 100 !important;
+}
+
+.bg-cor-x {
+	background-color: #535925;
+}
+
+.bg-cor-x2 {
+	background-color: #707346;
+}
+
+.bg-cor-x3 {
+	background-color: #261414;
+}
+
+.letter-space {
+	letter-spacing: .05em;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+	box-sizing: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*	overflow-y: auto;*/
+	perspective: 2px;
+}
+.parallax-2 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-2.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-3 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-3.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-4 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-4.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-5 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-5.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-6 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-6.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-7 {
+  /* The image used */
+  background-image: url(../imagens/a-arte-deve-libertar-as-pessoas-da-ignorancia-7.jpg);
+	max-width: 100%;
+	height: auto;
+
+  /* Set a specific height */
+  min-height: 350px;
+	image-rendering: -webkit-optimize-contrast;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.btn-primary {
+	color: #8F96A6 !important;
+	background-color: #F7FF00 !important;
+}
+
+.girar {
+	transform: rotate(25deg);
+/*	border-bottom: 1px solid #dee2e6 !important;*/
+}
+
+section {
+	transform: translateZ(0);
+}
+
+.bg-img-topo {
+	background-image: url("../imagens/the-art-of-eduardo-tavares-keep-going--un-film-by-neio-mustafa.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+}
+
+.branco {
+	color: #f1f1f1;
+}
+
+.bg-cor-verdinho {
+	background-color: #FAFFB5 !important;
+}
+
+.bg-cor-verdinho2 {
+	background-color: #DFE3A1 !important;
+}
+
+.bordar-topo-1 {
+	border-top: .5em solid #e1e6a0;
+}
+
+.titulo-nivel-0 {
+	font-size: 6.5rem;
+}
+.foto-credito {
+padding: 0px;
+justify-content: center !important;
+}
+
+.cinza {
+	color: #f1f1f1;
+}
+
+.line-height-p {
+	line-height: 1.5em;
+}
+
+.d-c-center {
+	display: grid;
+	align-content: center;
+}
+
+.bg-cor-vermelho {
+	background-color: #530902;
+}
