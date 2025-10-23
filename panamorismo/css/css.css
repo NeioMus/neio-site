@@ -127,7 +127,7 @@ figcaption {
   }
 }
 .topo-imagem {
-  background-image: url('../imagens/panamorismo-inteligencia-e-amor--topo--um-filme-de-neio-mustafa.jpg');
+  background-image: url('https://neio.com.br/panamorismo/imagens/panamorismo-inteligencia-e-amor--topo--um-filme-de-neio-mustafa.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
