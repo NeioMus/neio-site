@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media (max-width: 37.5em) {
+	#canvas {
+		margin: auto;
+		left: 0;
+		right: 0;
+		padding-top: 10em;
+		max-width: 55%;
+		max-height: 55%;
+	}
+}

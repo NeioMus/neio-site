@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	overflow-x: hidden;
+}
+
+.branco {
+	color: #ffffff;
+}
+
+
+
+
+@media (max-width: 37.5em) {
+#padding-0 {
+    padding-left: 0 !important;
+  }
+	.swap {
+	width: 45% !important;
+		height: auto;
+}
+}
+.titulo-h2 {
+	font-size: 1.8em !important;
+}
+
+.bg-bege {
+	background-color: #f2e2ce;
+	
+}
+
+.border-radius {
+	border-radius: 0px 75px 30px 5px;
+}
+
+.bg-vinho {
+	background-color: #420510;
+}
+
+.vinho {
+	color: #420510;
+}
+
+.bg-roxo {
+	background-color: #7268A3;
+}
+
+.bg-corredores {
+	background-color: #c57d38;
+}
+
+.roxo {
+	color: #300F3D;
+}
+
+.letter-space-indexador {
+	letter-spacing: 1em;
+}
+
+.dispaly-grid {
+  display: grid;
+}
+
+.overflow-x {
+	overflow-x: hidden;
+}
+
+.bg-color-brand-cinza {
+	background-color: #313131 !important;
+	width: auto;
+}
+
+.bg-color-brand-cinza-claro {
+	background-color: #7D7D7D !important;
+	width: auto;
+}
+
+.bg-color-brand-vinho {
+	background-color: #4D1B36;
+}
+
+.bg-color-brand-ocre {
+	background-color: #a07f36;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden !important;
+}
+
+.bg-color-brand-bege-claro {
+	background-color: #F4E6C6;
+}
+
+.bg-color-brand-turquesa {
+	background-color: #2b8692;
+}
+.bg-color-brand-verdao {
+	background-color: #0d3745;
+}
+
+.bg-color-brand-turquesa-2 {
+	background-color: #004d57;
+}
+
+.bg-cinza-f1f1f1 {
+	background-color: #f1f1f1;
+}
+
+.bg-cinza-escuro {
+	background-color: #2F2F2F;
+}
+
+.bg-cinza-degrade {
+	background-image: linear-gradient(#5a798d, #c8c9cb, #dcdcdc, #f2f2f2);
+}
+
+.bg-azul-saude {
+	background-color: #b1cae6;
+}
+
+.bg-vinho-seminario {
+	background-color: #892668;
+}
+
+.bg-degrade-sorocaba {
+	background-image: linear-gradient(#c4d0eb, #a5bae0, #7d9fd4, #598ac8);
+}
+
+.bg-degrade-seminario {
+	background-image: linear-gradient(#dfe8f5, #afc8e2, #6897c3, #0669a9);
+}
+
+.swap {
+	width: 13%;
+		height: auto;
+}
+
+.bg-lilas {
+	background-color: #4f004d;
+}
+
+.x-large {
+	font-size: x-large;
+}
+
+.sombra {
+	box-shadow: 3px 3px 11px #a8906e;
+}
+
+.bg-lobo-brand-bege {
+	background-color: #EED9C4;
+}
+
+.bg-color-marca-semanovsky {
+	background-color: #8B0000;
+}
+
+.bege-lobo-guara {
+	color: #EED9C4;
+}
+
+.lead-semanovsky {
+	font-size: 1.5rem;
+  line-height: 1.6em;
+}
+
+.object-fit-fill {
+	object-fit: fill !important;
+}
+
+.bg-turquesa {
+	background-color: #005F6A;
+}
+
+.bg-color-verdao {
+	background-color: #98FB98;
+}
+
+.bg-verde2 {
+	background-color: #40E0D0;
+}
+
+.bg-turquesa-escuro {
+	background-color: #005F6A;
+}
+
+.bg-cinza-claro {
+	background-color: #F5F5F5;
+}

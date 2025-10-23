@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	overflow-x: hidden;
+}
+.branco {
+	color: #ffffff;
+}
+.titulo-h2 {
+	font-size: 2em;
+}
+.lead-mkt {
+	margin-top: .6em !important;
+	font-size: 1.65rem;
+	line-height: 2.3rem;
+	
+}
+
+.pagination .page-item .page-link.active {
+  background-color: #ea9b10;
+  color: white !important;
+}
+
+
+@media (max-width: 37.5em) {
+#padding-0 {
+    padding-left: 0 !important;
+  }
+/*
+	h1 {
+		font-size: 8.7vw !important;
+	}
+*/
+	
+titulo-apresentacao {
+	font-size: 1em !important;
+	}	
+
+.lead-mkt {
+	margin-top: .6em !important;
+	font-size: 1.15rem !important;
+	line-height: 1.8rem;
+	}
+}
+/*FIM @media 37.5em*/
+
+
+.titulo-h2 {
+	font-size: 1em;
+	line-height: 1.2em;	
+}
+
+.titulo-h3 {
+	font-size: 1.5em;
+	font-weight: 100;
+	padding: .01em;
+	line-height: 1.3em;
+	justify-content: center !important;
+}
+
+.primeira-linha {
+/*	font-weight: bold;*/
+	font-size: 1.2em;
+}

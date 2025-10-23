@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+.body {
+	background-color: #000000;
+}
+
+h1 {
+	color: darkgray;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.h1, .lead {
+	color: darkgray;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+h2, h3, h4 {
+	color:#000000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.list-group-item {
+    background-color: #000;
+	color: darkgray;
+}
+
+.border-none {
+	border: none;
+}
+
+.centralizar {
+	margin: 0 auto;
+	display: flex;
+	height: auto;
+	width: 100%;
+}
+
+#horizontalizar {
+	align-self: center;
+}
+
+.cinza {
+	color: darkgray;
+}
+
+.icone-margem-direita {
+	padding-right: 7px
+}
+
+.modal {
+  padding: 0 !important;  /*override inline padding-right added from js*/
+}
+.modal .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.modal .modal-body {
+  overflow-y: auto;
+	background:#000000;
+	padding-right: 0px;
+}
+
+.modal-backdrop {
+    opacity:0.5 !important;
+	background-color: rgba(0,0,0,.0001) !important;
+}
+
+.btn-block > .btn:hover, .btn-primari-outline {
+	color: #D8D8D8;
+	background-color: rgba(128, 128, 128, 0.34);
+	border-radius: 20px 0px 0px 20px;
+	margin-right: 0px;
+	padding-right: 0px;
+	font-weight: 300; 
+	letter-spacing: 2px;
+}
+
+.btn-primari-outline:hover {
+	color: red;
+	background-color: #E0E0E0;
+	border-radius: 20px 0px 0px 0px;
+	font-weight: 500;
+	border-bottom: solid 3px #707070;
+}
+
+.btn-menu-cor {
+	color: darkgrey;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.audiovisual-iframe {
+	height: 890px;
+	border: none;
+	padding-top: 2%;
+}
+
+.vermelho {
+	color: black;
+	border-radius: 10px 10px 0px 0px;
+	background-color: red;
+}
+
+
+.neio-mustafa {
+	font-size: 40px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+.creditos {
+	font-size: 16px;
+	line-height: 26px;
+	color: dimgray;
+	font-weight: 300;
+}
+
+.lista-docs{
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+
+.artista {
+	font-weight: 300;
+	letter-spacing: 7px;
+}
+
+.box-menu-branco {
+/*	background-color: rgba(255,255,255,.68) !important;*/
+	float: right;
+	border-radius: 10px 0px 0px 10px;
+	margin-top: 7% !important;
+}
+
+
+.nome-sessao {
+	font-weight: 200;
+	letter-spacing: 6px;
+}
+
+.botoes-menu-home {
+	border-radius: 10px 10px 0px 0px;
+	background-color: white;
+}
+
+.subtitulo-menu {
+	font-weight: 200;
+	letter-spacing: 6px;
+	padding-left: 11px;
+}
+
+.branco {
+	color: white;
+}
+
+.close {
+	color: white;
+	background-color: red;
+}
+
+.close > .close:hover {
+	color: red;
+	background-color: white;
+}
+
+.dropdown-menu.show {
+	background-color: rgba(255, 255, 255, 0.93);
+	border: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
+	background-color: rgba(209,205,205,0.60);
+	border: none;
+	border-radius: 7px 0px 7px 7px;
+	margin: 0px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #f70a19;
+}
+.dropdown-item:focus {
+color: #16181b;
+text-decoration: none;
+background-color: #f8f9fa;
+}
+.cinza-escuro {
+	border-color:  rgba(128, 128, 128, 0.69);
+}
+

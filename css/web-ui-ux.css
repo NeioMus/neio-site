@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+/*  max-width: 800px;*/
+  margin: 0 auto;
+}
+.galeria img {
+  max-width: 20%;
+  height: auto;
+  margin: 10px;
+  transition: transform .2s;
+}
+.galeria img:hover {
+  transform: scale(1.1);
+}
+/* Estilos para a imagem ampliada */
+.ampliada {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+}
+.ampliada-inner {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100% !important;
+  overflow-y: auto;
+  max-width: 90vw;
+}
+.ampliada-inner img {
+  width: 100%;
+  height: auto;
+}
+.lead-mkt {
+  font-size: 1.25rem;
+}
+.corte-imagem {
+width: auto;
+height: 60vh !important;
+object-fit: cover;
+/*object-position: 0% 0%;*/
+}
+
+
+@media (max-width: 37.5em) {
+.corte-imagem {
+  width: 100% !important;
+  height: 239px !important;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.lead-mkt {
+  margin-top: 0em !important;
+  font-size: 1rem !important;
+	line-height: 1.6em;
+}	
+.ampliada-inner {
+  position: relative !important;
+/*
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100% !important;
+  overflow-y: auto;
+  max-width: 90vw;
+*/
+}
+	.swap {
+		width: 35% !important;
+		height: auto;
+	}
+	
+}
+.img-transparente {
+  opacity: 0.2;
+}
+
+.swap {
+	width: 12%;
+	height: auto;
+/*			border-bottom: gray 4.5px solid;*/
+}
+
+
+/*DEDO-CLIQUE SOBRE IMAGEM*/
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.touch-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+/*	transform: translate(-50%, -50%) rotate(40deg);*/
+	transition: transform 250ms linear;
+	z-index: 1;
+/*
+	background-color: rgb(241, 142, 0);
+	padding: 10px;
+	border-radius: 50%;
+*/
+	scale: 310%;
+/*
+	box-shadow: 0px 0px 60px 30px #00a0ff;
+	opacity: 1;
+*/
+	color: aliceblue;
+	text-shadow: 0.8px 1.1px 5px #000;
+}
+.touch-icon.hidden {
+  opacity: .3;
+}
+
+.touch-icon i {
+/*   Aqui você pode usar um ícone de dedo indicador de sua escolha */
+}
+
+.touch-icon:hover,
+.touch-icon:focus {
+	transition: opacity 250s;
+	filter: none;
+/*	transform: translate(-40%, -50%) rotate(20deg) scale(-150%) translateY(-10px);*/
+		transform: translate(-0%, -00%) rotate(-95deg) scale(-900%);
+	opacity: 0.3;
+}
+/*FIM DEDO-CLIQUE SOBRE IMAGEM*/
+
+.imagem-cinza {
+/*	filter: blur(8px) !important;  IE6-9 */
+/*	-webkit-filter: grayscale(1);  Google Chrome, Safari 6+ & Opera 15+ */
+/*	filter: grayscale(1);  Microsoft Edge and Firefox 35+ */
+	transition: .3s;	
+}
+
+/*
+.imagem-cinza:hover {
+	-webkit-filter: grayscale(0);
+	filter: blur(0px) !important;
+	transition: 2s;
+}
+*/
+
+/*
+.imagem-cinza:out {
+	-webkit-filter: grayscale(0);
+	filter: blur(5px);
+	transition: 2s;
+}*/
+
+
+.scale-70 {
+	  scale: 70%; /*Reduzir tamanho para celular*/
+}

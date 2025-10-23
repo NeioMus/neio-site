@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  overflow-x: hidden !important;
+}
+.branco {
+  color: #ffffff;
+}
+.titulo-h2 {
+  font-size: 2em;
+}
+.audio1 {
+  background-color: #171717;
+  transition: .3s ease-in-out;
+}
+.audio1:hover {
+  background-color: #ea9b10;
+  transition: .3s ease-in-out;
+}
+.playlist {
+  margin-bottom: 20px;
+}
+.playlist h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.playlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.playlist li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+.playlist li:hover {
+  background-color: #e0e0e0;
+}
+.lead-mkt {
+  margin-top: .6em !important;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+
+@media (max-width: 37.5em) {
+  #padding-0 {
+    padding-left: 0 !important;
+  }
+
+  titulo-apresentacao {
+    font-size: 1em !important;
+  }
+}
+.titulo-h2 {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+.titulo-h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: .01em;
+  line-height: 1.3em;
+  justify-content: center !important;
+}
+.primeira-linha {
+  /*	font-weight: bold;*/
+  font-size: 1.2em;
+}
+.playlist-grid {
+  display: grid !important;
+}
+.margin-audio {
+  margin: 10px 0px 0px 0px;
+}
+.centralizando-ol {
+  padding-inline: 0em !important;
+  display: grid;
+  justify-content: center;
+}
+.player-distribuicao-horizontal {
+  width: 100%;
+}
+.centralizar-texto {
+  justify-items: center;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade-in.visible {
+  opacity: 1;
+}
+/*
+.oveflow-hidden-x {
+	overflow-y: hidden;
+}
+*/
+.overflow-hidden-x {
+  overflow-x: hidden !important;
+  display: inline-grid;
+}
+.filtro-musicas {
+  background-color: #002a4f !important;
+  color: #f1f1f1;
+  border: #23aeff2e 2px solid;
+  font-weight: 300;
+  margin: 5px;
+}
+.filtro-musicas:hover {
+  background-color: #ea9b10 !important;
+  color: #FFFFFF !important;
+  border: #ea9b10 2px solid;
+  transition: .7s ease;
+  cursor: pointer;
+}
+.filtro-musicas:active {
+  background-color: #ea9b10 !important;
+  color: #FFFFFF;
+  border: #ea9b10 2px solid !important;
+}
+.border-filtro-musicas {
+  border: solid 2px #23aeff;
+  border-radius: 10px;
+}
+.fio-box {
+  border: solid 1px #23aeff;
+  padding: 20px;
+  border-radius: 10px;
+}

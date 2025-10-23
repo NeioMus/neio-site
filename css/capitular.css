@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+.captular > p:first-child::first-letter {
+  color: #004e92;
+  font-size: 12rem;
+  line-height: 0.75;
+  float: left;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
