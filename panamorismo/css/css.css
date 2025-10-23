@@ -1,0 +1,352 @@
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../imagens/coracao-bg.png"); /* Caminho para a imagem PNG transparente */
+  background-repeat: repeat; /* Repetir a imagem */
+  background-color: rgb(123, 22, 60);
+  /* Cor de fundo (RGBA para transparência ajustável) */
+  background-blend-mode: hue; /* Mistura a cor de fundo com a imagem */
+}
+h1 {
+  font-size: 6rem; /* Tamanho padrão para desktops */
+  /*  -webkit-text-stroke: 2px #0f170c;*/
+}
+h2 {
+  font-family: 'Chewy', cursive !important;
+  font-size: 3.1em;
+  color: #05FF15;
+  letter-spacing: 2.1px;
+  /*
+	-webkit-text-stroke: 2px #0f170c;
+	text-shadow: 0px 0px 32px black;
+*/
+}
+h3 {
+  font-family: 'Chewy', cursive !important;
+  color: #61FF1C;
+}
+p {
+  /*  font-weight: lighter !important;*/
+  color: #FAEAE8;
+}
+figcaption {
+  color: #FAEAE8;
+  font-size: 1em;
+}
+/* Para desktops (telas maiores que 1024px) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 9rem !important; /* Tamanho menor para celulares */
+  }
+  .h3 {
+    font-size: 2.25rem;
+    font-size: 2.65rem !important;
+    letter-spacing: 0.02em;
+  }
+  .espaco-titulo {
+    margin-top: 7vh; /* Adiciona mais espaço acima do título */
+  }
+}
+/* Para tablets e celulares (telas menores que 1024px) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 8.1rem !important; /* Tamanho menor para celulares */
+  }
+}
+/* Para telas médias (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Tamanho menor para celulares */
+  }
+  .foto-depoimento {
+    width: 150px; /* Reduzir o tamanho das imagens para telas menores */
+    height: 150px;
+  }
+  p {
+    font-size: 0.9rem; /* Ajustar o tamanho da fonte para evitar que o texto ultrapasse o limite */
+  }
+}
+/* Para celulares (telas menores que 576px) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3.1rem !important; /* Tamanho menor para celulares */
+  }
+  .topo-imagem {
+    height: 60vh !important;
+  }
+  .lead {
+    font-size: 1.2rem !important;
+    /*    border-bottom: aliceblue  solid 3.5px;*/
+  }
+  .espaco-titulo {
+    margin-top: 7vh; /* Adiciona mais espaço acima do título */
+  }
+  h2 {
+    font-size: 2.1em;
+  }
+  .h3 {
+    font-size: 0.45em !important;
+  }
+  .foto-depoimento {
+    scale: 80% !important;
+  }
+  .display-2 {
+    font-size: 2.3rem !important;
+  }
+  .testimonial {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.7em;
+    font-weight: lighter !important;
+  }
+  .centro-celular {
+    text-align: center !important;
+  }
+  /*
+	  .foto-diretor {
+    max-width: 500px;  Aumenta o tamanho da imagem em smartphones 
+    height: auto;
+  }
+*/
+  .foto-diretor {
+    max-width: 225px !important;
+    height: auto;
+  }
+  .fs-5 {
+    font-size: 1.05rem !important;
+    line-height: 2.2rem !important;
+  }
+  .borda-branca {
+    scale: 80% !important;
+  }
+  .modal {
+    --bs-modal-margin: 5vh;
+  }
+  figcaption {
+    font-size: 0.9em;
+  }
+}
+.topo-imagem {
+  background-image: url('../imagens/panamorismo-inteligencia-e-amor--topo--um-filme-de-neio-mustafa.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #00FF64;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: 2px #0f170c66;
+}
+.topo-imagem h1 {
+  font-size: 30vh;
+  font-weight: bold;
+  color: #05FF159E;
+  text-shadow: 0px 0px 32px black;
+  font-family: 'Chewy', cursive !important;
+}
+.lead {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+}
+.testimonial {
+  font-style: italic;
+  font-weight: lighter !important;
+}
+footer {
+  background-color: #030102;
+  color: #05FF15;
+  padding: 1rem 0;
+}
+.trailer-panamorismo {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.clickable-image {
+  cursor: pointer;
+}
+.modal-body img {
+  width: 100%; /* A imagem ocupa todo o modal */
+  height: auto;
+}
+/* Remove as bordas da modal */
+.modal-content.no-border {
+  border: none;
+  border-radius: 0; /* Remove arredondamento */
+}
+/* Garante que a imagem ocupe 100% da largura do modal */
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+/* Customização opcional para o botão de fechar */
+.btn-close {
+  background-color: #ffffff36; /* Cor do botão de fechar */
+  opacity: 0.8; /* Transparência */
+}
+.btn-close:hover {
+  opacity: 3; /* Sem transparência ao passar o mouse */
+}
+.custom-modal .modal-content {
+  background-color: #00000094; /* Fundo preto com 70% de opacidade */
+  border: none; /* Remove as bordas */
+  box-shadow: none; /* Remove a sombra padrão do modal */
+}
+.custom-modal .modal-body {
+  padding: 0; /* Remove o espaçamento interno */
+}
+.maior {
+  font-size: .5vh;
+}
+.espaco-de-texto {
+  letter-spacing: 0.08em;
+}
+.capitular {
+  font-size: 4.5em; /* Tamanho da letra capitular */
+  float: left; /* Posiciona a letra à esquerda */
+  line-height: 1; /* Ajusta o espaço vertical */
+  margin-right: 0.1em; /* Espaçamento à direita da letra */
+  font-family: 'Chewy', cursive !important;
+  /*  color: #4f4918;*/
+}
+.borda-branca {
+  border: #f5af1b 7px solid;
+}
+.foto1 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--imagem6--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto2 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--imagem2--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto3 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--lorenzo-rosebaugh--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto4 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--adao-e-eva--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto5 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--a-cidade-grita--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto6 {
+  display: block; /* Mostra a imagem fixa */
+  background-image: url("../imagens/panamorismo-inteligencia-e-amor--escolas-de-arte--um-filme-de-neio-mustafa.png"); /* Caminho correto */
+  background-position: center;
+  background-size: cover;
+  height: 400px; /* Ajuste conforme necessário */
+  box-shadow: 5px 13px 10.9px #00000021;
+}
+.foto-diretor {
+  max-width: 275px;
+  height: auto;
+}
+/*EFEITOS*/
+.fade-in {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(20px); /* Move o elemento 20 pixels para baixo e o aumenta 25% */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Define as transições para opacidade e transformação */
+}
+.fade-in.visible {
+  opacity: 1; /* Torna visível */
+  transform: translateY(0) scale(1); /* Restaura a posição original e reduz a escala de volta a 100% */
+}
+/* Adicionando um efeito de flutuação contínua */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  } /* Move para cima */
+  100% {
+    transform: translateY(0);
+  }
+}
+.float {
+  animation: floating 4s ease-in-out infinite; /* Animação de flutuação */
+}
+/*
+.foto-maior-no-smartphone .img-fluid {
+  width: 150%;
+  height: auto;
+}
+*/
+.foto-depoimento {
+  scale: 75% !important;
+}
+.display-2 {
+  font-size: 5rem;
+  color: #05FF159E;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+.bg-escuro {
+  background-color: #330832D6 !important;
+}
+.centro-celular {
+  text-align: left;
+}
+.float2 {
+  animation: floating 3s ease-in-out infinite; /* Animação de flutuação */
+}
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.mouse-over {
+  cursor: pointer;
+}
+.fs-5 {
+  font-size: 1.25rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.1rem;
+}
+.shadow-content {
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.88)); /* Sombra diretamente nas linhas */
+}
+
+.btn-primary {
+	color: #7b163c !important;
+  background-color: #05ff15;
+}
+.btn:hover {
+	background-color: #f9f9f9;
+}
+.verde {
+	color:#05FF15;
+}
+
+.bg-laureal {
+	background-color: #00000059;
+}
