@@ -1,0 +1,12 @@
+
+User-agent: *
+Allow: /
+
+Disallow: /ass-email-neio
+Disallow: /desalienacao
+Disallow: /font
+Disallow: /wp-admin
+Disallow: /wp-content
+Disallow: /wp-includes
+
+Sitemap: https://www.neio.com.br/sitemap.xml

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Página inicial -->
+  <url>
+    <loc>https://neio.com.br/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas em português -->
+  <url>
+    <loc>https://neio.com.br/audiovisual--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/audiovisual--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/audiovisuel--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/musicas--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/musicas--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/musique--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/apresentacao--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/apresentacao--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/presentation--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/web-ui-ux--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/web-ui-ux--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/web-ui-ux--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/design-grafico--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/design-grafico--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/graphisme--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/mkt-digital--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/mkt-digital--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/marketing-numerique--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/gestao-de-criacao--alta-qualidade-e-cultura-organizacional--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/gestao-de-criacao--alta-qualidade-e-cultura-organizacional--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/gestao-de-criacao--a-importancia-da-colaboracao-em-ambientes-criativos--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/gestao-de-criacao--a-importancia-da-colaboracao-em-ambientes-criativos--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/gestao-de-criacao--desperte-sua-potencia-criativa-e-liberte-se-das-tendencias--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/gestao-de-criacao--desperte-sua-potencia-criativa-e-liberte-se-das-tendencias--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Páginas em francês -->
+  <url>
+    <loc>https://neio.com.br/fr/marketing-numerique--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/marketing-numerique--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/mkt-digital--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/fr/graphisme--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/graphisme--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/design-grafico--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/fr/audiovisuel--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/audiovisuel--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/audiovisual--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/fr/presentation--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/presentation--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/apresentacao--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/fr/musique--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/musique--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/musicas--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://neio.com.br/fr/web-ui-ux--neio-mustafa.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://neio.com.br/fr/web-ui-ux--neio-mustafa.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://neio.com.br/web-ui-ux--neio-mustafa.html" />
+    <lastmod>2025-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
