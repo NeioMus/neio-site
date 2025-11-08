@@ -813,46 +813,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container col-10">
     <h2 class="text-center mb-4">Entre em Contato</h2>
 
-    <div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
-      ✅ Mensagem enviada com sucesso! Retornaremos em breve.
-    </div>
-
-    <form id="formContato" name="contato" method="POST" data-netlify="true" action="#contato">
+    <!-- Formulário MÍNIMO para teste -->
+    <form name="contato" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contato">
       
-      <div class="mb-3">
-        <label for="nome" class="form-label text-white-50">Nome</label>
-        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+      <div>
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label text-white-50">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+      
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email" required>
       </div>
-      <div class="mb-3">
-        <label for="mensagem" class="form-label text-white-50">Mensagem</label>
-        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+      
+      <div>
+        <label>Mensagem:</label>
+        <textarea name="mensagem" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      
+      <button type="submit">Enviar</button>
     </form>
   </div>
 </section>
 
-<script>
-// Verifica se a URL tem parâmetro de sucesso
-if (window.location.hash === '#contato') {
-  document.getElementById('mensagemSucesso').classList.remove('d-none');
-  
-  // ⭐ NOVO: Limpa os campos do formulário
-  document.getElementById('formContato').reset();
-}
-
-// Feedback visual durante o envio
-document.getElementById('formContato').addEventListener('submit', function() {
-  const btn = this.querySelector('button[type="submit"]');
-  btn.innerHTML = 'Enviando...';
-  btn.disabled = true;
-});
-</script>
+<!-- NENHUM SCRIPT - zero JavaScript -->
 	
 	
 
