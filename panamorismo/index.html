@@ -782,6 +782,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </section>
 
 <!-- Formulário de Contato -->
+	<!-- 
+
 <section class="py-5">
   <div class="container col-10">
     <h2 class="text-center mb-4">Entre em Contato</h2>
@@ -803,6 +805,82 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </form>
   </div>
 </section>
+
+	FIM FORM -->
+
+
+<section class="py-5">
+  <div class="container col-10">
+    <h2 class="text-center mb-4">Entre em Contato</h2>
+    
+    <!-- Mensagem de sucesso -->
+    <div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
+      Mensagem enviada com sucesso! Entraremos em contato em breve.
+    </div>
+
+    <!-- Formulário Netlify -->
+    <form id="formContato" name="contato" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="needs-validation" novalidate>
+      <input type="hidden" name="form-name" value="contato">
+      
+      <!-- Campo anti-spam (invisível) -->
+      <div class="d-none">
+        <label>Não preencha este campo: <input name="bot-field"></label>
+      </div>
+
+      <div class="mb-3">
+        <label for="nome" class="form-label text-white-50">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+        <div class="invalid-feedback">
+          Por favor, digite seu nome.
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="email" class="form-label text-white-50">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+        <div class="invalid-feedback">
+          Por favor, digite um e-mail válido.
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="mensagem" class="form-label text-white-50">Mensagem</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+        <div class="invalid-feedback">
+          Por favor, digite sua mensagem.
+        </div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- Script de validação e mensagem -->
+<script>
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            } else {
+                event.preventDefault()
+                document.getElementById('mensagemSucesso').classList.remove('d-none')
+                form.classList.add('d-none')
+                setTimeout(function() {
+                    form.submit()
+                }, 2000)
+            }
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+</script>
+	
+	
 
 <!-- Footer -->
 <footer class="text-center">
