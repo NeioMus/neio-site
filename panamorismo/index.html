@@ -793,7 +793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
       ✅ Mensagem enviada com sucesso! Retornaremos em breve.
     </div>
 
-    <!-- Formulário com SEU design -->
+    <!-- Formulário final para Netlify -->
     <form id="formContato" name="contato" method="POST" data-netlify="true" action="#contato">
       <input type="hidden" name="form-name" value="contato">
       
@@ -815,7 +815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </section>
 
 <script>
-// Quando a página carrega com #contato na URL (após envio)
+// Quando a página carrega com #contato na URL (após envio bem-sucedido)
 if (window.location.hash === '#contato') {
   // Mostra mensagem de sucesso
   document.getElementById('mensagemSucesso').classList.remove('d-none');
