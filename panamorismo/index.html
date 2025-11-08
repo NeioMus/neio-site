@@ -813,42 +813,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container col-10">
     <h2 class="text-center mb-4">Entre em Contato</h2>
     
-    <!-- Mensagem de sucesso -->
-    <div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
-      Mensagem enviada com sucesso! Entraremos em contato em breve.
-    </div>
-
-    <!-- Formulário Netlify -->
-    <form id="formContato" name="contato" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="needs-validation" novalidate>
+    <!-- Formulário SUPER SIMPLES para teste -->
+    <form name="contato" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contato">
       
-      <!-- Campo anti-spam (invisível) -->
-      <div class="d-none">
-        <label>Não preencha este campo: <input name="bot-field"></label>
-      </div>
-
       <div class="mb-3">
         <label for="nome" class="form-label text-white-50">Nome</label>
-        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
-        <div class="invalid-feedback">
-          Por favor, digite seu nome.
-        </div>
+        <input type="text" class="form-control" id="nome" name="nome" required>
       </div>
       
       <div class="mb-3">
         <label for="email" class="form-label text-white-50">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
-        <div class="invalid-feedback">
-          Por favor, digite um e-mail válido.
-        </div>
+        <input type="email" class="form-control" id="email" name="email" required>
       </div>
       
       <div class="mb-3">
         <label for="mensagem" class="form-label text-white-50">Mensagem</label>
-        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
-        <div class="invalid-feedback">
-          Por favor, digite sua mensagem.
-        </div>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
       </div>
       
       <button type="submit" class="btn btn-primary">Enviar</button>
