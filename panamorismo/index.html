@@ -812,14 +812,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 <section class="py-5">
   <div class="container col-10">
     <h2 class="text-center mb-4">Entre em Contato</h2>
-    
-    <!-- Mensagem de sucesso (inicialmente invisível) -->
+
+    <!-- Mensagem de sucesso (inicialmente escondida) -->
     <div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
       ✅ Mensagem enviada com sucesso! Retornaremos em breve.
     </div>
 
-    <!-- Seu formulário original adaptado -->
-    <form id="formContato" name="contato" method="POST" data-netlify="true">
+    <form id="formContato" name="contato" method="POST" data-netlify="true" action="#contato">
       <input type="hidden" name="form-name" value="contato">
       
       <div class="mb-3">
@@ -839,29 +838,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </div>
 </section>
 
-<!-- Script para envio suave -->
 <script>
-document.getElementById('formContato').addEventListener('submit', function(event) {
-  event.preventDefault(); // Impede o recarregamento
-  
-  // Mostra mensagem de sucesso
+// Verifica se a URL tem parâmetro de sucesso (após o redirect do Netlify)
+if (window.location.hash === '#contato') {
   document.getElementById('mensagemSucesso').classList.remove('d-none');
-  
-  // Prepara os dados do formulário
-  const formData = new FormData(this);
-  
-  // Envia para o Netlify em segundo plano
-  fetch('/', {
-    method: 'POST',
-    body: formData
-  }).then(response => {
-    console.log('Formulário enviado com sucesso!');
-    // Opcional: esconder o formulário após envio
-    // this.style.display = 'none';
-  }).catch(error => {
-    console.error('Erro ao enviar:', error);
-    // Mensagem de erro opcional
-  });
+}
+
+// Feedback visual durante o envio
+document.getElementById('formContato').addEventListener('submit', function() {
+  const btn = this.querySelector('button[type="submit"]');
+  btn.innerHTML = 'Enviando...';
+  btn.disabled = true;
 });
 </script>
 	
