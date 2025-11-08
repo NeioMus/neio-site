@@ -813,7 +813,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
   <div class="container col-10">
     <h2 class="text-center mb-4">Entre em Contato</h2>
 
-    <!-- Mensagem de sucesso (inicialmente escondida) -->
     <div id="mensagemSucesso" class="alert alert-success d-none" role="alert">
       ✅ Mensagem enviada com sucesso! Retornaremos em breve.
     </div>
@@ -839,9 +838,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </section>
 
 <script>
-// Verifica se a URL tem parâmetro de sucesso (após o redirect do Netlify)
+// Verifica se a URL tem parâmetro de sucesso
 if (window.location.hash === '#contato') {
   document.getElementById('mensagemSucesso').classList.remove('d-none');
+  
+  // ⭐ NOVO: Limpa os campos do formulário
+  document.getElementById('formContato').reset();
 }
 
 // Feedback visual durante o envio
