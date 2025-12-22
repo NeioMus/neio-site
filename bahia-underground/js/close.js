@@ -7,16 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const senha = prompt("Digite a senha de acesso:");
+  let senha = null;
 
-  if (senha === "bahiaunderground2025") {
-    sessionStorage.setItem("acessoLiberado", "true");
-    location.reload();
-  } else {
-    sessionStorage.removeItem("acessoLiberado");
-    document.body.innerHTML = "";
-    alert("Acesso restrito aos apoiadores.");
-    // NÃO redireciona para about:blank
+  while (senha !== "bahiaunderground2025") {
+    senha = prompt("Digite a senha de acesso:");
+
+    // Cancelou o prompt
+    if (senha === null) {
+      alert("Acesso restrito aos apoiadores.");
+      return;
+    }
+
+    // Senha incorreta
+    if (senha !== "bahiaunderground2025") {
+      alert("Senha incorreta.");
+    }
   }
+
+  // Senha correta
+  sessionStorage.setItem("acessoLiberado", "true");
+  location.reload();
 
 });
