@@ -995,11 +995,11 @@
 	
 <!--	script para não deixar os players se sobreporem quando clicados-->
 <script>
-	document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const players = document.querySelectorAll(".bandcamp-player");
 
   players.forEach((player) => {
-    player.addEventListener("mouseenter", () => {
+    player.addEventListener("pointerdown", () => {
       players.forEach((other) => {
         if (other !== player) {
           const src = other.getAttribute("src");
@@ -1009,7 +1009,7 @@
     });
   });
 });
-	</script>	
+</script>	
 	
 </body>
 </html>
