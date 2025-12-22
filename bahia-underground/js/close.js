@@ -3,7 +3,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Se já validou nesta aba, libera
   if (sessionStorage.getItem("acessoLiberado") === "true") {
     return;
   }
@@ -12,11 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (senha === "bahiaunderground2025") {
     sessionStorage.setItem("acessoLiberado", "true");
+    location.reload();
   } else {
     sessionStorage.removeItem("acessoLiberado");
     document.body.innerHTML = "";
     alert("Acesso restrito aos apoiadores.");
-    window.location.replace("about:blank");
+    // NÃO redireciona para about:blank
   }
 
 });
