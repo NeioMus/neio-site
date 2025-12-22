@@ -1,16 +1,22 @@
 // JavaScript Document
 
 
-const senhaCorreta = "bahiaunderground2025";
+document.addEventListener("DOMContentLoaded", () => {
 
-if (!sessionStorage.getItem("acessoLiberado")) {
-  const entrada = prompt("Digite a senha de acesso:");
+  // Se já validou nesta aba, libera
+  if (sessionStorage.getItem("acessoLiberado") === "true") {
+    return;
+  }
 
-  if (entrada === senhaCorreta) {
+  const senha = prompt("Digite a senha de acesso:");
+
+  if (senha === "bahiaunderground2025") {
     sessionStorage.setItem("acessoLiberado", "true");
   } else {
-    alert("Acesso restrito aos apoiadores.");
+    sessionStorage.removeItem("acessoLiberado");
     document.body.innerHTML = "";
+    alert("Acesso restrito aos apoiadores.");
+    window.location.replace("about:blank");
   }
-}
 
+});
