@@ -483,3 +483,6 @@ a:link {
 .laranja {
 	  color: #f18e00;
 }
+.display-table {
+	display: table;
+}
