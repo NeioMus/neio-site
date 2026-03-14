@@ -342,7 +342,8 @@ bottom: 0;
     border-bottom: solid .12em #5C411D;
 	}
 	.pt-130 {
-		padding-top: 80% !important;
+		padding-top: 90% !important;
+		margin-bottom: 5%;
 	}	
 }
 
@@ -353,8 +354,8 @@ bottom: 0;
 	  position: absolute;
 	  width: 60% !important;
 	  height: 60% !important;
-	  margin: auto;
-	  left: 10%;
+		margin-top: 20%;
+		left: 10%;
 	  right: 10%;
 	  top: 10%;
 	  bottom: 10%;
