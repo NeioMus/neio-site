@@ -293,8 +293,8 @@ h1 {
 .artista {
 	font-weight: 300;
 	letter-spacing: 1px;
-	text-align: center;
-	align-content: center;
+	text-align: center !important;
+	align-content: center !important;
 	justify-content: center;
 	display: grid;
 	margin-top: -1em;
