@@ -184,11 +184,25 @@ body {
 	line-height: 1.3;
 }
 
+.border-close {
+	border: solid 2px #000000;
+}
+
+.btn-close-fixed {
+ position: fixed;
+  top: 40px;
+  right: calc((100vw - 1140px) / 3 + 20px);
+  z-index: 1080;
+}
+
 
 @media (max-width: 37.5em) {
 	.section-eyebrow {
 		font-size: 0.65rem;
 	}
+	 .modal-header {
+    padding: 0.5rem 1rem !important;
+  }
 /* Navbar inicial (sobre o vídeo) */
 #mainNav {
   background: transparent;
@@ -207,4 +221,11 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .border-close {
+    right: 20px;
+  }	
+.modal h1 {
+    font-size: 1.6rem;
+  }	
 }
+
