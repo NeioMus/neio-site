@@ -1,177 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt">
+
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nêio Mustafa - artista multimedial</title>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="imagens/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="imagens/favicon-192.png" sizes="192x192" type="image/png">
-<link rel="apple-touch-icon" href="imagens/favicon-180.png" sizes="180x180">
-<meta property="og:title" content="Nêio Mustafa - artista multimedial">
-<meta name="description" content="Bem-vindo ao website de Nêio Mustafa, artista digital. Soluções criativas em design, vídeo, web, trilhas sonoras e redação. Originalidade em destaque.">
-<meta name="author" content="Nêio Mustafa" />
-<meta property="og:description" content="Bem-vindo ao website de Nêio Mustafa, artista digital. Soluções criativas em design, vídeo, web, trilhas sonoras e redação. Originalidade em destaque.">
-<meta property="og:image" itemprop="image" content="https://www.neio.com.br/imagens/neio-mustafa-artista-multimedial.png">
-<meta property="og:image:alt" content="Nêio Mustafa - artista multimedial">
-<meta property="og:locale" content="pt_BR">
-<meta name="twitter:image:src" content="https://www.neio.com.br/imagens/neio-mustafa-artista-multimedial.png">
-<meta property="og:site_name" content="Nêio Mustafa">
-<meta property="og:url" content="https://www.neio.com.br">
-<meta property="og:type" content="website">
-<meta name="keywords" content="arte, digital, semiótica, designer, projetos, planejamento, estratégia, gerenciamento, marketing digital, filmes, vídeos, documentários, marcas, publicações, livros, ilustrações, web, música, trilhas sonoras, audiovisual, UI, UX">
-
-<!-- Bootstrap -->
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-<link href="css/css.css" rel="stylesheet" type="text/css" media="screen">
-
-<!-- Fontes -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
-
-<!-- write your code here -->
-<style>
-#animation_container, #_preload_div_ {
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-</style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> 
-<script src="js/circulo-neio.js"></script> 
-<script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-function init() {
-	canvas = document.getElementById("canvas");
-	anim_container = document.getElementById("animation_container");
-	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("19D095AF23444AC8A12BA2E06B65D070");
-	var lib=comp.getLibrary();
-	var loader = new createjs.LoadQueue(false);
-	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
-	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
-	var lib=comp.getLibrary();
-	loader.loadManifest(lib.properties.manifest);
-}
-function handleFileLoad(evt, comp) {
-	var imagens=comp.getImages();	
-	if (evt && (evt.item.type == "image")) { imagens[evt.item.id] = evt.result; }	
-}
-function handleComplete(evt,comp) {
-	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	var lib=comp.getLibrary();
-	var ss=comp.getSpriteSheet();
-	var queue = evt.target;
-	var ssMetadata = lib.ssMetadata;
-	for(i=0; i<ssMetadata.length; i++) {
-		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
-	}
-	var preloaderDiv = document.getElementById("_preload_div_");
-	preloaderDiv.style.display = 'none';
-	canvas.style.display = 'block';
-	exportRoot = new lib.circuloneio();
-	stage = new lib.Stage(canvas);	
-	//Registers the "tick" event listener.
-	fnStartAnimation = function() {
-		stage.addChild(exportRoot);
-		createjs.Ticker.framerate = lib.properties.fps;
-		createjs.Ticker.addEventListener("tick", stage);
-	}	    
-	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',false,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
-	AdobeAn.compositionLoaded(lib.properties.id);
-	fnStartAnimation();
-}
-</script> 
-<!-- write your code here --> 
 
 <!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PGNGLXL');</script> 
+})(window,document,'script','dataLayer','GTM-PGNGLXL');
+</script> 
 <!-- End Google Tag Manager -->
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nêio Mustafa — Diretor de Documentários | Artista Multimedial</title>
+<meta name="description" content="Nêio Mustafa — Diretor de Documentários e Artista Multimedial. Criação e direção em audiovisual, design, música, comunicação e experiências digitais.">
+<meta name="author" content="Nêio Mustafa">
+<link rel="canonical" href="https://neiomustafa.com/">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/imagens/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/imagens/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/imagens/favicon-180.png" sizes="180x180">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Nêio Mustafa — Diretor de Documentários | Artista Multimedial">
+<meta property="og:description" content="Nêio Mustafa — Diretor de Documentários e Artista Multimedial. Criação e direção em audiovisual, design, música, comunicação e experiências digitais.">
+<meta property="og:image" content="https://neiomustafa.com/imagens/neio-mustafa-artista-multimedial.png">
+<meta property="og:image:alt" content="Nêio Mustafa — Diretor de Documentários | Artista Multimedial">
+<meta property="og:url" content="https://neiomustafa.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nêio Mustafa">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nêio Mustafa — Diretor de Documentários | Artista Multimedial">
+<meta name="twitter:description" content="Nêio Mustafa — Diretor de Documentários e Artista Multimedial. Criação e direção em audiovisual, design, música, comunicação e experiências digitais.">
+<meta name="twitter:image" content="https://neiomustafa.com/imagens/neio-mustafa-artista-multimedial.png">
+
+<!-- Schema.org --> 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+  "@type": "WebSite",
+  "name": "Nêio Mustafa",
+  "alternateName": "neiomustafa.com",
+  "url": "https://neiomustafa.com/"
+},
+    {
+  "@type": "Person",
+  "name": "Nêio Mustafa",
+  "url": "https://neiomustafa.com/",
+  "jobTitle": "Diretor de Documentários | Artista Multimedial",
+  "image": "https://neiomustafa.com/imagens/neio-mustafa-artista-multimedial.png"
+}
+  ]
+}
+</script> 
+
+<!-- write your code here --> 
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> 
+<script src="circulo-radar-3.js"></script> 
+
+<!--CSS INDEX 2026	-->
+<link href="css/css-index-2026.css" rel="stylesheet" type="text/css" media="screen">
+
+<!--Font	-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+<!--Bootstrap 5.3	-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body onload="init();">
+<body onload="init();" class="d-flex flex-column min-vh-100">
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGNGLXL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGNGLXL"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"> </iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="cabecera">
-  <div class="coluna1">
-    <div class="col-md-12 cinza">
-      <h1 class="neio-mustafa" id="entrelinha-neio">Nêio Mustafa</h1>
-      <h2 class="artista pt-2 text-right branco text-nowrap"><strong>Diretor de Documentários | Artista Multimedial</strong></h2>
-	  <p class="artista text-right azul text-nowrap">Posicionamento de marcas multimídia</p>
-	  </div>
+<div class="layout">
+  <div class="coluna coluna-1 text-end">
+    <h1 class="neio-mustafa" id="entrelinha-neio"> Nêio Mustafa </h1>
+    <h2 class="slogan cinza text-nowrap"> <strong>Diretor de Documentários | Artista Multimedial</strong> </h2>
+    <p class="artista azul text-nowrap"> Posicionamento de marcas multimídia </p>
   </div>
-  <div class="coluna-meio img-fluid display-table">
-    <div id="animation_container">
-      <canvas id="canvas" width="450" height="480" style="position: absolute; display: none; background-color:rgba(204, 204, 204, 0.00);"></canvas>
-      <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:450px; height:480px; position: absolute; left: 0px; top: 0px; display: none;"> </div>
+  <div class="coluna coluna-2">
+    <div class="conteudo-canvas"> 
+      <!--    Tooltip--> 
+      <a id="animation_container"
+    href="/audiovisual--neio-mustafa.html"
+    aria-label="Bem-vindo">
+      <canvas id="canvas" width="400" height="400"></canvas>
+      <div id="dom_overlay_container"></div>
+      <div id="welcome-tooltip"> <span></span> </div>
+      </a> 
+      <!--BOTÕES DAS LINGUAS-->
+      <div class="idiomas d-flex justify-content-center align-items-center"> <a href="/audiovisual--neio-mustafa.html"
+       target="_self"
+       title="Português"
+       class="azul"> <span class="bt-border-circular">pt</span> </a> <span class="separador">|</span> <a href="https://neiomustafa.com/fr/audiovisuel--neio-mustafa.html"
+       target="_self"
+       title="Français"
+       class="azul"> <span class="bt-border-circular">fr</span> </a> <span class="separador">|</span> <a href="https://neiomustafa.com/en/lean-institute-brasil-case-study.html"
+       target="_self"
+       title="English"
+       class="azul"> <span class="bt-border-circular">en</span> </a> </div>
     </div>
-    <div id="_preload_div_" style="position:absolute; top:0; left:0; display: inline-block; height:480px; width: 450px; text-align: center;"> <span style="display: inline-block; height: 100%; vertical-align: middle;"></span> <img src="imagens/_preloader.gif" alt="" style="vertical-align: middle; max-height: 100%"></div>
-    <div class="col-md-12 d-flex justify-content-center pt-130 cinza bts-contatos-mobile"> <a href="mkt-digital--neio-mustafa.html" target="_self" title="Português" class="text-center azul"> <span class="bt-border-circular">pt</span></a> <span class="m-2">|</span> <a href="fr/marketing-numerique--neio-mustafa.html" target="_self" title="Français" class="text-center azul"><span class="bt-border-circular">fr</span></a> </div>
   </div>
-  <div class="coluna2">
-    <div class="vertical-menu"> <a href="audiovisual--neio-mustafa.html" target="_self" class="btn" title="Imagens que impactam, inspiram e convertem.">• <strong>Filme</strong> 
-<!--		<span class="text-muted d-none d-sm-block"> produção audiovisual</span>-->
-		
-		</a> <a href="musicas--neio-mustafa.html" target="_self" class="btn" title="Músicas originais com identidade exclusiva.">• <strong>Música</strong> 
-		
-<!--		<span class="text-muted d-none d-sm-block"> trilhas e projetos</span>-->
-		
-		</a> 
-		<a href="https://neio.com.br/design-grafico--neio-mustafa.html" target="_self" class="btn" title="Identidade visual para posicionamento e reconhecimento.">• <strong>Visual</strong> 
-			
-<!--			<span class="text-muted d-none d-sm-block">identidade e branding</span>-->
-		
-		</a>
-		
-		<a href="web-ui-ux--neio-mustafa.html" target="_self" class="btn" title="Interfaces intuitivas para conversão e usabilidade.
-">• <strong>Digital</strong> 
-			
-<!--			<span class="text-muted d-none d-sm-block"> experiência do usuário e webdesign</span>-->
-		
-		</a> 
-		
-		<a href="https://neio.com.br/mkt-digital--neio-mustafa.html" target="_self" class="btn" title="Planejamento digital para impulsionar e potencializar o crescimento.
-">• <strong>Comunicação</strong> 
-			
-<!--			<span class="text-muted d-none d-sm-block"> estratégia para negócios</span> -->
-		</a>
-		
-				<a href="gestao-de-criacao--alta-qualidade-e-cultura-organizacional--neio-mustafa.html" target="_self" class="btn" title="Reflexões para inspirar e promover a inovação.">• <strong>Estratégia</strong> 
-			
-<!--			<span class="text-muted d-none d-sm-block"> equipes e processos criativos</span>-->
-		</a> 
-		
-		<a href="https://neio.com.br/apresentacao--neio-mustafa.html" target="_self" class="btn" title="Direção para transformar ideias em impacto.">• <strong>O Artista</strong> 
-<!--			<span class="text-muted d-none d-sm-block"> conheça Nêio Mustafa</span>-->
-		</a> 
-		
-
-		
-
-      <div class="mt-2" style="display: flex; border-bottom: solid 1px cornflowerblue;"> 
-        <!--        <p title="contato" class="reduzir-margin-bottom" style="color: white;padding-right: 1em;">contato</p>--> 
-        <a href="mailto:contato@neio.com.br" title="contato@neio.com.br" class="margem-bt-contatos d-block pl-3"> <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </a> <a href="tel:+55-11-98647-4423" title="+55 11 - 98647 4423" class="margem-bt-contatos d-block pl-3"> <i class="fa fa-phone fa-2x" aria-hidden="true"></i> </a></div>
-    </div>
+  <div class="coluna coluna-3">
+    <nav class="vertical-menu d-flex"> <a href="/audiovisual--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Imagens que impactam, inspiram e convertem."> • <strong>Filme</strong> </a> <a href="/musicas--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Músicas originais com identidade exclusiva."> • <strong>Música</strong> </a> <a href="/design-grafico--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Identidade visual para posicionamento e reconhecimento."> • <strong>Visual</strong> </a> <a href="/web-ui-ux--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Interfaces intuitivas para conversão e usabilidade."> • <strong>Digital</strong> </a> <a href="/mkt-digital--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Planejamento digital para impulsionar e potencializar o crescimento."> • <strong>Comunicação</strong> </a> <a href="/gestao-de-criacao--alta-qualidade-e-cultura-organizacional--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Reflexões para inspirar e promover a inovação."> • <strong>Estratégia</strong> </a> <a href="/apresentacao--neio-mustafa.html"
+           target="_self"
+           class="menu-link"
+           title="Direção para transformar ideias em impacto."> • <strong>O Artista</strong> </a> </nav>
   </div>
 </div>
-<footer class="footer">
-  <p class="small cinza  text-center"><i class="fa fa-registered"></i> <span>2007-</span><span id="ano"></span>&nbsp; Nêio Mustafa - artista multimedial&nbsp;</p>
+
+<!--footer-->
+<footer class="footer flex-shrink-0 text-center">
+  <p class="data-footer cinza text-center"> <i class="fa fa-registered"></i> <span>&copy; 2007-</span><span id="ano"></span> — Nêio Mustafa</p>
 </footer>
 <script>
 	const ano = document.getElementById("ano");
@@ -179,18 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	ano.innerHTML = anoAtual.getFullYear();
 </script> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script> 
-
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
+<!--Canva	--> 
+<script src="js/circulo-radar-init.js"></script>
 </body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGNGLXL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 </html>
