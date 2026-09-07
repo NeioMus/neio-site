@@ -175,16 +175,24 @@ html, body {
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media (max-width: 600px) {
-  .layout {
-    grid-template-columns: 1fr;
-/*    grid-template-rows: repeat(3, 1fr);*/
-	  grid-template-rows: repeat(3, minmax(0, 1fr));
-	  min-height: 0;
+	html, body {
+    height: 100%;
+    min-height: 0;
     overflow: hidden;
   }
+  .layout {
+	  height: calc(100dvh - 20px);
+	  min-height: 0;
+	  overflow: hidden;
+	  
+	  grid-template-columns: 1fr;
+/*    grid-template-rows: repeat(3, 1fr);*/
+	  grid-template-rows: repeat(3, minmax(0, 1fr));
+	  
+  }
   #animation_container {
-    width: min(100vw, 33.333vh);
-    height: min(100vw, 33.333vh);
+    width: min(100vw, 33.333dvh);
+    height: min(100vw, 33.333dvh);
   }
 	.neio-mustafa {
 		font-weight: 300;
@@ -209,6 +217,8 @@ html, body {
         display: flex;
         justify-content: center;
         align-items: center;
+	min-height: 0;
+    overflow: hidden;
     }
 .vertical-menu {
 	width: 100%;
