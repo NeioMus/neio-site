@@ -177,7 +177,10 @@ html, body {
 @media (max-width: 600px) {
   .layout {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+/*    grid-template-rows: repeat(3, 1fr);*/
+	  grid-template-rows: repeat(3, minmax(0, 1fr));
+	  min-height: 0;
+    overflow: hidden;
   }
   #animation_container {
     width: min(100vw, 33.333vh);
@@ -199,6 +202,7 @@ html, body {
 	}
 .data-footer {
 	font-size: clamp(6px, 2.8vw, 11px);
+	margin: 0;
 }
 /*	COLUNA 3*/
 .coluna-3 {
